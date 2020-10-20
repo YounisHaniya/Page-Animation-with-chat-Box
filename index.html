@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fonts/font-awesome.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style2.css"> -->
+    <title>Page Animation with Chat Box</title>
+</head>
+<body>
+    <div class="banner">
+        <h2 id="text"> Younis Haniya</h2>
+        <div class="clouds">
+            <img src="img/cloud1.png" style="--i:1;">
+            <img src="img/cloud2.png" style="--i:2;">
+            <img src="img/cloud3.png" style="--i:3;">
+            <img src="img/cloud4.png" style="--i:4;">
+            <img src="img/cloud5.png" style="--i:5;">
+            <img src="img/cloud1.png" style="--i:10;">
+            <img src="img/cloud2.png" style="--i:9;">
+            <img src="img/cloud3.png" style="--i:8;">
+            <img src="img/cloud4.png" style="--i:7;">
+            <img src="img/cloud5.png" style="--i:6;">
+        </div>
+    </div>
+
+    <input type="checkbox" id="click">
+    <label for="click">
+        <i class="fa fa-commenting-o"></i>
+        <i class="fa fa-times disa"></i>
+    </label>
+    <div class="wrapper">
+        <div class="head-text"> Let's chat? - Online</div>
+        <div class="chat-box"> 
+            <div class="desc-text"> Please fill out the form below to start chatting with the next available agent.</div>
+            <form action="#">
+                <div class="field" >
+                    <input type="text" placeholder="Your Name" required>
+                </div>
+                <div class="field">
+                    <input type="email" placeholder="Email Address" required>
+                </div>
+                <div class="field textarea">
+                    <textarea cols="30" rows="10" placeholder="Explain your queries..." required></textarea>
+                </div>
+                <div class="field">
+                    <button type="submit"> Start chat</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <section>
+        <h2> Realistic Cloud Banner Parallax Effects</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur incidunt explicabo omnis maiores pariatur at architecto ipsam iusto totam velit natus ad necessitatibus nihil cumque officiis, rerum obcaecati repudiandae culpa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut labore saepe, quod eius, ipsa recusandae aliquid nam libero inventore doloremque, mollitia fugit nostrum! Quaerat, eaque. Iure perferendis corrupti nostrum deleniti.
+    
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione iusto recusandae aspernatur, maxime hic nulla quidem sed nobis quisquam sint porro laudantium saepe ut repellendus qui debitis voluptate. Possimus maiores expedita ipsa distinctio obcaecati rerum deleniti itaque deserunt, error nulla ullam earum in temporibus officiis provident impedit eos fuga adipisci. A ut quibusdam alias sapiente perspiciatis neque tenetur sequi aut inventore, delectus assumenda nisi aspernatur, nihil perferendis dolore temporibus odit voluptatum animi. Nostrum omnis corporis delectus consequuntur similique quae nesciunt molestiae! Iste atque sit nemo doloremque quod minus tempore, deleniti aliquid, molestias labore est facere laboriosam voluptate? Possimus neque laudantium laboriosam dolores earum iusto voluptatem asperiores accusamus maxime necessitatibus distinctio dolor placeat aspernatur nostrum, deserunt hic perspiciatis sequi, similique nisi, blanditiis magnam quisquam! Corporis ipsum nulla laudantium itaque veritatis ipsa commodi vel dolores maiores! Quibusdam, dolore eum nemo fugiat consequatur esse, optio iure temporibus autem nihil dolorum sit quaerat quae non veritatis sunt vitae, illum ex ipsum quisquam in! Modi accusamus dolorum aspernatur placeat officiis praesentium amet qui, sit asperiores quos quis ad id eos voluptas. Quasi possimus harum necessitatibus doloremque assumenda, molestias labore iure iusto quod porro error praesentium, ad totam vitae debitis amet, corrupti nisi quia! Tempora vel dolorum vero in, rem ipsam, molestias corrupti amet facilis architecto harum sequi saepe, delectus nesciunt aliquid nobis quas at doloribus est repellendus atque! Porro nostrum labore obcaecati? Laboriosam iste sapiente corrupti architecto veniam temporibus ipsa cumque aliquid voluptatibus beatae, voluptate non reiciendis cupiditate rerum velit rem reprehenderit ipsum eius ullam eos magnam doloremque quaerat. Quidem ex ipsum assumenda minus esse cum doloremque unde at fuga praesentium ab, placeat quae cumque fugiat eos itaque maiores debitis dolor. Quidem assumenda voluptate doloribus voluptates, laudantium modi sequi nihil consequuntur ut exercitationem reprehenderit expedita itaque? Optio esse culpa aut vel numquam voluptatibus molestiae modi.
+        </p>
+    </section>
+<script>
+    let text = document.getElementById('text');
+    window.addEventListener('scroll',function(){
+        let value =window.scrollY;
+        text.style.marginBottom = value * 2 +'px';
+    })
+</script>
+</body>
+</html>
